@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio &middot; Amon S. Kaneko</title>
+<meta name="description" content="Experience, education, and skills for Amon S. Kaneko, a computer engineering student at Singapore Polytechnic.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='16' fill='%230b1210'/%3E%3Ctext x='50' y='68' font-family='monospace' font-size='50' font-weight='700' fill='%23e0993f' text-anchor='middle'%3EAK%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
+<div class="vignette" aria-hidden="true"></div>
+
+<div class="app">
+  <div class="topbar">
+    <div class="topbar-inner">
+      <a class="callsign" href="index.html">9V1KA &middot; KF0RKQ</a>
+      <nav class="topnav">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="projects.html">Projects</a>
+      </nav>
+    </div>
+  </div>
+
+  <main class="wrap glass">
+    <header class="hero reveal" style="--d:0; padding-top:52px; padding-bottom:32px;">
+      <p class="eyebrow">Portfolio</p>
+      <h1 style="font-size: clamp(26px, 4vw, 34px);">Experience &amp; Background</h1>
+      <p class="role" style="font-size:16px;">Robotics, radio, and the programmes I help run alongside them.</p>
+    </header>
+
+    <section class="block reveal" style="--d:0">
+      <span class="pad"></span>
+      <h2>About</h2>
+      <p class="lede">I work mostly at the boundary between hardware and software. Recently that's meant fusing LiDAR, camera, and ultrasonic data so autonomous robots can navigate hospital corridors with glass walls, and building small PCBs and RF antennas as a licensed amateur radio operator.</p>
+      <p class="lede">Alongside that, I help run a few community programmes: scholarships and open-source fellowships through YouthTechSG, and SourceFoods, a small food-aid tracking platform a few friends and I started.</p>
+    </section>
+
+    <section class="block reveal" style="--d:0">
+      <span class="pad"></span>
+      <h2>Experience</h2>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-role">Student Assistant Engineer <span class="entry-org">&middot; Singapore Polytechnic, Advanced Robotics &amp; Intelligent Control Centre</span></span>
+          <span class="entry-date">May 2026 &ndash; Present</span>
+        </div>
+        <div class="entry-loc">Contract &middot; Singapore &middot; On-site</div>
+        <ul class="bullets">
+          <li>Working on Autonomous Mobile Robots (AMRs) Navigation in Transparent Environments for Hospital Applications, benchmarking sensing modalities (2D/3D LiDAR, RGB-D, IR, ultrasonic) against glass and transparent surfaces.</li>
+          <li>Diagnosed ultrasonic beam geometry (a ~15&deg; conical field of view with range but no bearing, plus specular dropout beyond ~10&deg; off normal) as a contributor to coverage gaps.</li>
+          <li>Implemented <a href="https://arxiv.org/html/2408.05608v1" target="_blank" rel="noopener" style="color:var(--signal); text-decoration:none; border-bottom:1px solid var(--line);">TOPGN</a>, a method that detects glass from the intensity pattern in a LiDAR point cloud, and I'm extending it with ultrasonic sensing to cover cases the LiDAR intensity alone misses.</li>
+          <li>Deployed as a ROS 2 Nav2 costmap layer, tested across repeated autonomous runs in a mock healthcare ward under varying illumination.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-role">Acting Deputy Head of Programmes <span class="entry-org">&middot; YouthTechSG</span></span>
+          <span class="entry-date">Oct 2024 &ndash; Present</span>
+        </div>
+        <div class="entry-loc">Hybrid &middot; previously Engagements Team (Nov 2024 &ndash; Jan 2025)</div>
+        <ul class="bullets">
+          <li>Help organise interactive events with external tech partners to widen students' exposure to different tech pathways.</li>
+          <li>Help administer the YouthxSkills (Cybersecurity) Scholarship with SANS Institute and partner companies.</li>
+          <li>Help run the Open Impact Fellowship with DPG Alliance organisations (Open Government Products, ClimWeb, OpenFn), placing fellows on live open-source codebases.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-role">Co-Founder <span class="entry-org">&middot; SourceFoods</span></span>
+          <span class="entry-date">Oct 2024 &ndash; Present</span>
+        </div>
+        <div class="entry-loc">Singapore &middot; "We make food aid smarter"</div>
+        <ul class="bullets">
+          <li>Started the project after volunteering with food aid organisations and noticing usable food discarded simply because no one could track it in time.</li>
+          <li>Helped secure funding through grant writing and outreach to community partners and government agencies.</li>
+          <li>Helped build a system of record for donations, inventory, and distribution, moving partner organisations off paper logs and disconnected spreadsheets.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-role">Inspire Team Lead <span class="entry-org">&middot; Singapore Youth AI</span></span>
+          <span class="entry-date">Mar 2026 &ndash; Present</span>
+        </div>
+        <div class="entry-loc">Volunteer</div>
+        <ul class="bullets">
+          <li>Help design and deliver workshops introducing secondary students to AI technology, career pathways, and responsible AI use.</li>
+          <li>Built reusable teaching materials (slide decks, lesson plans, activity guides) for other facilitators to reuse across schools.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-role">Software Team Lead <span class="entry-org">&middot; Artistry Heals</span></span>
+          <span class="entry-date">Dec 2024 &ndash; May 2025</span>
+        </div>
+        <div class="entry-loc">Princeton TigerLaunch 2025 Highest Social Impact Startup &middot; Port63 2nd Runner-Up &middot; Top 10, KSIP 2025 &middot; SMU BIG Jan '25 cohort</div>
+        <ul class="bullets">
+          <li>Led the software team building an online platform for emotional awareness and literacy through creative arts, from concept to MVP.</li>
+          <li>Also handled business development (pitching, partnerships, and customer discovery) alongside technical delivery.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="block reveal" style="--d:0">
+      <span class="pad"></span>
+      <h2>Leadership &amp; Community</h2>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-role">Secretary <span class="entry-org">&middot; SP Debate Club</span></span>
+          <span class="entry-date">Mar 2026 &ndash; Present</span>
+        </div>
+        <div class="entry-loc">Previously Director of Events (Mar 2025 &ndash; Feb 2026)</div>
+        <ul class="bullets">
+          <li>Broke 2nd at Singapore Debate Open and 3rd at an NTU Pro-Am against teams from Singapore and the region.</li>
+          <li>Help organise SP Debate Open '25 and '26: registration, tabbing, adjudication, and finances.</li>
+          <li>Represented SP at the Singapore Youth Policy Competition, Singapore Model Cabinet, and Singapore Debate Open.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-role">Vice-President <span class="entry-org">&middot; SP Infocomm Club</span></span>
+          <span class="entry-date">Feb 2025 &ndash; Present</span>
+        </div>
+        <div class="entry-loc">Previously Events Lead, ExCo (AY24/25)</div>
+        <ul class="bullets">
+          <li>Help plan workshops across a range of tech skills for students from all backgrounds.</li>
+          <li>Help run inclusive tech events and service-learning initiatives.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-role">Leadership Development Coordinator <span class="entry-org">&middot; SP Outstanding Talent</span></span>
+          <span class="entry-date">Mar 2026 &ndash; Present</span>
+        </div>
+        <ul class="bullets">
+          <li>Help maintain leadership pipelines connecting SP students to opportunities within SP and with community and inter-institution partners.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-role">Member <span class="entry-org">&middot; SP RoboCup Interest Group</span></span>
+          <span class="entry-date">Aug 2025 &ndash; Present</span>
+        </div>
+        <ul class="bullets">
+          <li>Competed at RoboRoarZ 2025 (Jakarta) and RoboRoarZ 2026 (Singapore) with the team.</li>
+          <li>Helped improve the vision system for SP's Robo-Erectus RoboCup SML team by automating part of the computer-vision pre-training workflow.</li>
+          <li>Worked with ROS 2 for system integration, package management, and simulation-to-hardware deployment.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-role">Amateur Radio &amp; Electronics <span class="entry-org">&middot; Hobbyist</span></span>
+        </div>
+        <ul class="bullets">
+          <li>Designing PCBs in KiCad for hobby projects, and building RF antennas for terrestrial amateur radio and satellite (AMSAT) communications.</li>
+          <li>Writing small SDR-based DSP scripts for signal analysis and decoding.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="block reveal" style="--d:0">
+      <span class="pad"></span>
+      <h2>Education</h2>
+
+      <div class="edu-card">
+        <div class="edu-top">
+          <div>
+            <div class="edu-name">National University of Singapore</div>
+            <div class="edu-program">University Accelerated Pathway Programme (UAPP) &middot; Non-Graduating Student, Electrical &amp; Computer Engineering</div>
+          </div>
+          <div class="edu-gpa">AY27/28 Sem 2</div>
+        </div>
+        <p class="edu-note">Through Singapore Polytechnic's UAPP, I'll spend a semester at NUS as a non-graduating student, taking modules in Electrical &amp; Computer Engineering (ECE) in AY27/28 Semester 2.</p>
+      </div>
+
+      <div class="edu-card">
+        <div class="edu-top">
+          <div>
+            <div class="edu-name">Singapore Polytechnic</div>
+            <div class="edu-program">Diploma in Computer Engineering &middot; Jul 2025 &ndash; Jan 2028</div>
+          </div>
+          <div class="edu-gpa">GPA 4.00 / 4.00</div>
+        </div>
+        <div class="honors">
+          <span class="honor">Director's Honour Roll, AY25/26</span>
+          <span class="honor">SP Engineering Scholar</span>
+          <span class="honor">Siemens Prize</span>
+          <span class="honor">CCA: Gold with Honours</span>
+        </div>
+      </div>
+
+      <div class="edu-card">
+        <div class="edu-top">
+          <div>
+            <div class="edu-name">Singapore Polytechnic</div>
+            <div class="edu-program">Polytechnic Foundation Programme, Science &amp; Technology &middot; Apr 2024 &ndash; Mar 2025</div>
+          </div>
+          <div class="edu-gpa">GPA 4.00 / 4.00</div>
+        </div>
+        <div class="honors">
+          <span class="honor">PFP Director's Honour Roll</span>
+          <span class="honor">Top PFP Student Award</span>
+          <span class="honor">Distinctions, 8/9 modules</span>
+        </div>
+        <p class="edu-note">Represented SP at the Singapore Undergraduate Policy Competition, Singapore Debate Open &amp; SMU Novices, and Singapore Model Cabinet 2024.</p>
+      </div>
+    </section>
+
+    <section class="block reveal" style="--d:0">
+      <span class="pad"></span>
+      <h2>Skills</h2>
+      <div class="skill-grid">
+        <div>
+          <div class="skill-cat-label">Robotics</div>
+          <div class="skill-tags">
+            <span class="skill-tag">ROS 2</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">Computer Vision</span>
+            <span class="skill-tag">3D Modelling</span>
+            <span class="skill-tag">3D Printing</span>
+          </div>
+        </div>
+        <div>
+          <div class="skill-cat-label">RF &amp; Hardware</div>
+          <div class="skill-tags">
+            <span class="skill-tag">PCB Design</span>
+            <span class="skill-tag">SDR Software</span>
+            <span class="skill-tag">DSP</span>
+            <span class="skill-tag">Terrestrial &amp; Satellite (AMSAT)</span>
+          </div>
+        </div>
+        <div>
+          <div class="skill-cat-label">Software &amp; AI</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">JavaScript / TypeScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">LangGraph</span>
+            <span class="skill-tag">LangChain</span>
+            <span class="skill-tag">PyTorch</span>
+          </div>
+        </div>
+        <div>
+          <div class="skill-cat-label">Tools</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Excel</span>
+            <span class="skill-tag">VBA</span>
+          </div>
+        </div>
+        <div style="grid-column: 1 / -1;">
+          <div class="skill-cat-label">Leadership &amp; Programmes</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Debate &amp; adjudication</span>
+            <span class="skill-tag">Program management</span>
+            <span class="skill-tag">Grant writing</span>
+            <span class="skill-tag">Partnerships</span>
+          </div>
+        </div>
+      </div>
+      <div class="spoken-row">
+        <div class="skill-cat-label">Spoken Languages</div>
+        <div class="skill-tags">
+          <span class="skill-tag">English &middot; native</span>
+          <span class="skill-tag">Hindi &middot; professional</span>
+          <span class="skill-tag">Japanese &middot; proficient</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="block reveal" style="--d:0">
+      <span class="pad"></span>
+      <h2>Licenses &amp; Certifications</h2>
+      <div class="lic">
+        <div>
+          <div class="lic-name">Amateur Radio Station Licence</div>
+          <div class="lic-issuer">IMDA &middot; Credential 9V1KA</div>
+        </div>
+        <div class="lic-dates">Oct 2024 &ndash; Oct 2029</div>
+      </div>
+      <div class="lic">
+        <div>
+          <div class="lic-name">Amateur Radio General Class Licence</div>
+          <div class="lic-issuer">FCC &middot; Callsign KF0RKQ</div>
+        </div>
+        <div class="lic-dates">Aug 2024 &ndash; Aug 2034</div>
+      </div>
+    </section>
+
+    <footer class="contact reveal" style="--d:0">
+      <span class="pad"></span>
+      <div class="contact-grid">
+        <div class="contact-item">
+          <span class="label">Email</span>
+          <a href="mailto:amon.kaneko@gmail.com">amon.kaneko@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <span class="label">SourceFoods</span>
+          <a href="mailto:amon@sourcefoods.org">amon@sourcefoods.org</a>
+        </div>
+        <div class="contact-item">
+          <span class="label">Phone</span>
+          +65 8933 1693
+        </div>
+        <div class="contact-item">
+          <span class="label">Callsign</span>
+          9V1KA (IMDA) &middot; KF0RKQ (FCC)
+        </div>
+      </div>
+      <p class="sign-off">Singapore &middot; last updated 2026</p>
+    </footer>
+  </main>
+</div>
+
+<script src="js/three.min.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

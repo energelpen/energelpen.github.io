@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects &middot; Amon S. Kaneko</title>
+<meta name="description" content="Selected projects by Amon S. Kaneko, spanning robotics, computer vision, and machine learning.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='16' fill='%230b1210'/%3E%3Ctext x='50' y='68' font-family='monospace' font-size='50' font-weight='700' fill='%23e0993f' text-anchor='middle'%3EAK%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
+<div class="vignette" aria-hidden="true"></div>
+
+<div class="app">
+  <div class="topbar">
+    <div class="topbar-inner">
+      <a class="callsign" href="index.html">9V1KA &middot; KF0RKQ</a>
+      <nav class="topnav">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="projects.html">Projects</a>
+      </nav>
+    </div>
+  </div>
+
+  <main class="wrap glass">
+    <header class="projects-intro reveal" style="--d:0">
+      <p class="eyebrow">Projects</p>
+      <h1 style="font-size: clamp(26px, 4vw, 34px);">A Few Things I've Built</h1>
+      <p class="role" style="font-size:16px;">Mostly at the intersection of robotics and machine learning. More on <a href="https://github.com/energelpen" target="_blank" rel="noopener" style="color:var(--signal); text-decoration:none; border-bottom:1px solid var(--line);">github.com/energelpen</a>.</p>
+    </header>
+
+    <div class="project-list">
+
+      <article class="project-card reveal" style="--d:0">
+        <div class="project-head">
+          <h3 class="project-title">Autonomous Mobile Robots (AMRs) Navigation in Transparent Environments for Hospital Applications</h3>
+          <span class="project-status progress">Ongoing</span>
+        </div>
+        <div class="project-context">SP Advanced Robotics &amp; Intelligent Control Centre &middot; deployed on a Volta robot base</div>
+        <p class="project-desc">As part of my work at SP's Advanced Robotics &amp; Intelligent Control Centre, I've been looking at how to get autonomous robots to detect glass and other transparent obstacles that standard LiDAR tends to miss. I implemented <a href="https://arxiv.org/html/2408.05608v1" target="_blank" rel="noopener" style="color:var(--signal); text-decoration:none; border-bottom:1px solid var(--line);">TOPGN</a>, a method that detects glass from the intensity pattern in a LiDAR point cloud, and I'm extending it by adding ultrasonic sensing to cover cases the LiDAR intensity alone misses. It runs as a ROS 2 Nav2 costmap layer on a Volta robot base.</p>
+        <div class="tag-row">
+          <span class="skill-tag">ROS 2</span>
+          <span class="skill-tag">LiDAR</span>
+          <span class="skill-tag">Ultrasonic</span>
+          <span class="skill-tag">C++</span>
+        </div>
+        <div class="shot-row">
+          <figure class="shot">
+            <div class="media"><img src="images/amr-navigation/livox-3d-lidar.jpeg" alt="3D LiDAR point cloud from the Livox sensor in RViz" loading="lazy"></div>
+            <figcaption>3D LiDAR point cloud (Livox)</figcaption>
+          </figure>
+          <figure class="shot">
+            <div class="media"><img src="images/amr-navigation/glass-detection-pointcloud.jpeg" alt="Glass detection highlighted in the point cloud" loading="lazy"></div>
+            <figcaption>Glass detected in the point cloud</figcaption>
+          </figure>
+          <figure class="shot">
+            <div class="media"><img src="images/amr-navigation/rviz-costmap.jpeg" alt="Costmap and localisation in RViz on the Volta base" loading="lazy"></div>
+            <figcaption>Costmap &amp; localisation on the Volta base</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <article class="project-card reveal" style="--d:1">
+        <div class="project-head">
+          <h3 class="project-title">Face Recognition Door Access: 5G &amp; Edge Computing</h3>
+          <span class="project-status live">Repo</span>
+        </div>
+        <div class="project-context">ET0743 &middot; 5G / AIoT module, Singapore Polytechnic</div>
+        <p class="project-desc">A facial-recognition door access system built for the 5G/AIoT module. A Raspberry Pi streams video over a 5G connection to a laptop acting as the edge (MEC) node, which runs recognition locally so access decisions don't have to round-trip to a distant server. Door commands are signed and sent over MQTT, and the system sends a Telegram alert with a photo whenever someone unrecognised shows up at the door.</p>
+        <div class="tag-row">
+          <span class="skill-tag">Computer Vision</span>
+          <span class="skill-tag">Edge Computing</span>
+          <span class="skill-tag">5G / IoT</span>
+          <span class="skill-tag">MQTT</span>
+          <span class="skill-tag">Telegram Bot API</span>
+        </div>
+        <div class="link-row">
+          <a class="plink" href="https://github.com/energelpen/ET0743-5GAIOT-Project" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.5c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.9-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85V21c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+            Repo
+          </a>
+        </div>
+        <div class="shot-row">
+          <figure class="shot">
+            <div class="media"><img src="images/door-access/live-recognition.jpeg" alt="Live face recognition granting access" loading="lazy"></div>
+            <figcaption>Live recognition, access granted</figcaption>
+          </figure>
+          <figure class="shot">
+            <div class="media"><img src="images/door-access/telegram-alert.jpeg" alt="Telegram alert showing an unrecognised visitor at the door" loading="lazy"></div>
+            <figcaption>Telegram alert for an unknown visitor</figcaption>
+          </figure>
+          <figure class="shot">
+            <div class="media"><img src="images/door-access/dashboard.jpeg" alt="Access dashboard showing granted, denied, and unauthorised counts" loading="lazy"></div>
+            <figcaption>Access dashboard</figcaption>
+          </figure>
+          <figure class="shot">
+            <div class="media"><img src="images/door-access/system-architecture.jpeg" alt="System architecture diagram for the 5G facial recognition door access system" loading="lazy"></div>
+            <figcaption>System architecture</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <article class="project-card reveal" style="--d:0">
+        <div class="project-head">
+          <h3 class="project-title">Duckietown Live Inferencing Demo</h3>
+          <span class="project-status progress">In Progress</span>
+        </div>
+        <div class="project-context">Built for an upcoming SP School of EEE deep-learning module</div>
+        <p class="project-desc">A small live-inferencing demo on the Duckietown platform, built as a teaching example for an upcoming deep-learning module. The robot detects lane markings and objects (including the rubber-duck obstacles used in the course) in real time, so students can see inference actually running rather than just slides about it.</p>
+        <div class="tag-row">
+          <span class="skill-tag">Duckietown</span>
+          <span class="skill-tag">Deep Learning</span>
+          <span class="skill-tag">Real-time Inference</span>
+          <span class="skill-tag">Python</span>
+        </div>
+        <div class="shot-row">
+          <figure class="shot">
+            <div class="media"><img src="images/duckietown/inference-grid.jpeg" alt="Grid of live object detection frames on the Duckietown platform" loading="lazy"></div>
+            <figcaption>Live object detection frames</figcaption>
+          </figure>
+          <figure class="shot">
+            <div class="media"><video src="images/duckietown/demo.mp4" controls preload="metadata"></video></div>
+            <figcaption>Demo recording</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <article class="project-card reveal" style="--d:1">
+        <div class="project-head">
+          <h3 class="project-title">Diabetes Risk Predictor</h3>
+          <span class="project-status live">Live Demo</span>
+        </div>
+        <div class="project-context">ET0737 &middot; Machine Learning &amp; AI module, Singapore Polytechnic</div>
+        <p class="project-desc">For my ML/AI module, I built a short questionnaire that estimates diabetes risk and serves the result through a web app (ClearCheck). I compared nine model families under 5-fold cross-validation on a public CDC health-survey dataset, then deployed an XGBoost model with isotonic probability calibration, since the raw model's predicted probabilities were noticeably overconfident.</p>
+        <div class="tag-row">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">XGBoost</span>
+          <span class="skill-tag">Isotonic Calibration</span>
+          <span class="skill-tag">Web Deployment</span>
+        </div>
+        <div class="link-row">
+          <a class="plink" href="https://github.com/energelpen/ET0737-MLAI-Project" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.5c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.9-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85V21c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+            Repo
+          </a>
+          <a class="plink" href="https://mlai-project.onrender.com/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3h7v7"/><path d="M10 14 21 3"/><path d="M21 14v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h6"/></svg>
+            Live demo
+          </a>
+        </div>
+        <div class="shot-row">
+          <figure class="shot">
+            <div class="media"><img src="images/diabetes-predictor/app-screenshot.jpg" alt="ClearCheck diabetes risk questionnaire web app" loading="lazy"></div>
+            <figcaption>The deployed ClearCheck questionnaire</figcaption>
+          </figure>
+          <figure class="shot">
+            <div class="media"><img src="images/diabetes-predictor/model-comparison.png" alt="Comparison of nine model families across ROC-AUC, F1, recall, and precision under 5-fold cross-validation" loading="lazy"></div>
+            <figcaption>Comparing 9 model families under 5-fold CV</figcaption>
+          </figure>
+          <figure class="shot">
+            <div class="media"><img src="images/diabetes-predictor/calibration.png" alt="Probability calibration of the deployed model, before and after isotonic calibration" loading="lazy"></div>
+            <figcaption>Isotonic calibration vs. raw XGBoost</figcaption>
+          </figure>
+        </div>
+      </article>
+
+    </div>
+  </main>
+</div>
+
+<div id="lightbox">
+  <button type="button" class="lb-close" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+  </button>
+  <img id="lightbox-img" src="" alt="">
+  <div class="lb-caption" id="lightbox-caption"></div>
+</div>
+
+<script src="js/three.min.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>
