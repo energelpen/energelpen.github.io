@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Portfolio &middot; Amon S. Kaneko</title>
-<meta name="description" content="Experience, education, and skills for Amon S. Kaneko, a computer engineering student at Singapore Polytechnic.">
+<title>Portfolio &middot; Amon Saka Kaneko</title>
+<meta name="description" content="Amon Saka Kaneko's experience in edge AI, computer vision, autonomous robotics, and community programmes.">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='16' fill='%230b1210'/%3E%3Ctext x='50' y='68' font-family='monospace' font-size='50' font-weight='700' fill='%23e0993f' text-anchor='middle'%3EAK%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="css/style.css">
 </head>
@@ -29,69 +29,44 @@
     <header class="hero reveal" style="--d:0; padding-top:52px; padding-bottom:32px;">
       <p class="eyebrow">Portfolio</p>
       <h1 style="font-size: clamp(26px, 4vw, 34px);">Experience &amp; Background</h1>
-      <p class="role" style="font-size:16px;">Robotics, radio, and the programmes I help run alongside them.</p>
+      <p class="role" style="font-size:16px;">Applied AI, embedded systems, autonomous robotics, and community programmes.</p>
+      <div class="cta-row"><a class="cta" href="Amon_Saka_Kaneko_Resume.pdf" download>Download resume &darr;</a></div>
     </header>
 
     <section class="block reveal" style="--d:0">
       <span class="pad"></span>
       <h2>About</h2>
-      <p class="lede">I work mostly at the boundary between hardware and software. Recently that's meant fusing LiDAR, camera, and ultrasonic data so autonomous robots can navigate hospital corridors with glass walls, and building small PCBs and RF antennas as a licensed amateur radio operator.</p>
-      <p class="lede">Alongside that, I help run a few community programmes: scholarships and open-source fellowships through YouthTechSG, and SourceFoods, a small food-aid tracking platform a few friends and I started.</p>
+      <p class="lede">I work on AI systems that have to operate beyond a development laptop: computer vision models for a low-cost space payload, sensing and navigation for autonomous robots, and deployed machine learning applications.</p>
+      <p class="lede">Alongside research, I lead school AI outreach through Singapore Youth AI and help run technology and food-aid programmes through YouthTechSG and SourceFoods.</p>
     </section>
 
     <section class="block reveal" style="--d:0">
       <span class="pad"></span>
-      <h2>Experience</h2>
+      <h2>Professional Experience</h2>
 
       <div class="entry">
         <div class="entry-head">
-          <span class="entry-role">Student Assistant Engineer <span class="entry-org">&middot; Singapore Polytechnic, Advanced Robotics &amp; Intelligent Control Centre</span></span>
+          <span class="entry-role">Student Research Assistant <span class="entry-org">&middot; Singapore Polytechnic, 5G &amp; AIoT Centre</span></span>
+          <span class="entry-date">Sep 2026 &ndash; Present</span>
+        </div>
+        <div class="entry-loc">Edge AI payload for space situational awareness</div>
+        <ul class="bullets">
+          <li>Developing embedded software for a low-cost COTS camera payload using a Raspberry Pi Compute Module 5 and Hailo accelerator, including redundant multi-boot and network-boot recovery paths.</li>
+          <li>Cleaning image data, training and evaluating YOLO26-based object detection models alongside other candidates, and quantising models for edge inference.</li>
+          <li>Exploring AI models for hyperspectral analysis as part of the payload research.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-role">Student Assistant Engineer <span class="entry-org">&middot; Advanced Robotics and Automation Centre (ARAC)</span></span>
           <span class="entry-date">May 2026 &ndash; Present</span>
         </div>
-        <div class="entry-loc">Contract &middot; Singapore &middot; On-site</div>
+        <div class="entry-loc">Autonomous navigation in transparent environments</div>
         <ul class="bullets">
-          <li>Working on Autonomous Mobile Robots (AMRs) Navigation in Transparent Environments for Hospital Applications, benchmarking sensing modalities (2D/3D LiDAR, RGB-D, IR, ultrasonic) against glass and transparent surfaces.</li>
-          <li>Diagnosed ultrasonic beam geometry (a ~15&deg; conical field of view with range but no bearing, plus specular dropout beyond ~10&deg; off normal) as a contributor to coverage gaps.</li>
-          <li>Implemented <a href="https://arxiv.org/html/2408.05608v1" target="_blank" rel="noopener" style="color:var(--signal); text-decoration:none; border-bottom:1px solid var(--line);">TOPGN</a>, a method that detects glass from the intensity pattern in a LiDAR point cloud, and I'm extending it with ultrasonic sensing to cover cases the LiDAR intensity alone misses.</li>
-          <li>Deployed as a ROS 2 Nav2 costmap layer, tested across repeated autonomous runs in a mock healthcare ward under varying illumination.</li>
-        </ul>
-      </div>
-
-      <div class="entry">
-        <div class="entry-head">
-          <span class="entry-role">Acting Deputy Head of Programmes <span class="entry-org">&middot; YouthTechSG</span></span>
-          <span class="entry-date">Oct 2024 &ndash; Present</span>
-        </div>
-        <div class="entry-loc">Hybrid &middot; previously Engagements Team (Nov 2024 &ndash; Jan 2025)</div>
-        <ul class="bullets">
-          <li>Help organise interactive events with external tech partners to widen students' exposure to different tech pathways.</li>
-          <li>Help administer the YouthxSkills (Cybersecurity) Scholarship with SANS Institute and partner companies.</li>
-          <li>Help run the Open Impact Fellowship with DPG Alliance organisations (Open Government Products, ClimWeb, OpenFn), placing fellows on live open-source codebases.</li>
-        </ul>
-      </div>
-
-      <div class="entry">
-        <div class="entry-head">
-          <span class="entry-role">Co-Founder <span class="entry-org">&middot; SourceFoods</span></span>
-          <span class="entry-date">Oct 2024 &ndash; Present</span>
-        </div>
-        <div class="entry-loc">Singapore &middot; "We make food aid smarter"</div>
-        <ul class="bullets">
-          <li>Started the project after volunteering with food aid organisations and noticing usable food discarded simply because no one could track it in time.</li>
-          <li>Helped secure funding through grant writing and outreach to community partners and government agencies.</li>
-          <li>Helped build a system of record for donations, inventory, and distribution, moving partner organisations off paper logs and disconnected spreadsheets.</li>
-        </ul>
-      </div>
-
-      <div class="entry">
-        <div class="entry-head">
-          <span class="entry-role">Inspire Team Lead <span class="entry-org">&middot; Singapore Youth AI</span></span>
-          <span class="entry-date">Mar 2026 &ndash; Present</span>
-        </div>
-        <div class="entry-loc">Volunteer</div>
-        <ul class="bullets">
-          <li>Help design and deliver workshops introducing secondary students to AI technology, career pathways, and responsible AI use.</li>
-          <li>Built reusable teaching materials (slide decks, lesson plans, activity guides) for other facilitators to reuse across schools.</li>
+          <li>Benchmarked 2D and 3D LiDAR, RGB-D, infrared, and ultrasonic sensing against glass and other transparent surfaces.</li>
+          <li>Reimplemented the TOPGN pipeline to detect transparent obstacles from LiDAR intensity grids, then extended detection with ultrasonic ranging and an Extended Kalman Filter.</li>
+          <li>Integrated the result into a ROS 2 Nav2 costmap layer for path planning; completed 10 of 10 collision-free autonomous runs in a mock healthcare ward under varied lighting.</li>
         </ul>
       </div>
 
@@ -100,72 +75,48 @@
           <span class="entry-role">Software Team Lead <span class="entry-org">&middot; Artistry Heals</span></span>
           <span class="entry-date">Dec 2024 &ndash; May 2025</span>
         </div>
-        <div class="entry-loc">Princeton TigerLaunch 2025 Highest Social Impact Startup &middot; Port63 2nd Runner-Up &middot; Top 10, KSIP 2025 &middot; SMU BIG Jan '25 cohort</div>
+        <div class="entry-loc">Princeton TigerLaunch 2025 Highest Social Impact Startup &middot; Port63 2nd Runner-Up &middot; KSIP 2025 Top 10</div>
         <ul class="bullets">
-          <li>Led the software team building an online platform for emotional awareness and literacy through creative arts, from concept to MVP.</li>
-          <li>Also handled business development (pitching, partnerships, and customer discovery) alongside technical delivery.</li>
+          <li>Led a software team building an AI and immersive-technology platform for emotional awareness through creative arts, from concept to MVP.</li>
+          <li>Supported partnerships, customer discovery, pitching, and fundraising alongside technical delivery.</li>
         </ul>
       </div>
     </section>
 
     <section class="block reveal" style="--d:0">
       <span class="pad"></span>
-      <h2>Leadership &amp; Community</h2>
+      <h2>Volunteering &amp; Community</h2>
 
       <div class="entry">
         <div class="entry-head">
-          <span class="entry-role">Secretary <span class="entry-org">&middot; SP Debate Club</span></span>
-          <span class="entry-date">Mar 2026 &ndash; Present</span>
+          <span class="entry-role">Inspire Program Lead <span class="entry-org">&middot; Singapore Youth AI</span></span>
+          <span class="entry-date">Apr 2026 &ndash; Present</span>
         </div>
-        <div class="entry-loc">Previously Director of Events (Mar 2025 &ndash; Feb 2026)</div>
         <ul class="bullets">
-          <li>Broke 2nd at Singapore Debate Open and 3rd at an NTU Pro-Am against teams from Singapore and the region.</li>
-          <li>Help organise SP Debate Open '25 and '26: registration, tabbing, adjudication, and finances.</li>
-          <li>Represented SP at the Singapore Youth Policy Competition, Singapore Model Cabinet, and Singapore Debate Open.</li>
+          <li>Coordinate school outreach and volunteers to deliver workshops on AI technology, career pathways, and responsible AI for secondary students.</li>
+          <li>Develop reusable slide decks, lesson plans, and activities for facilitators across schools.</li>
         </ul>
       </div>
 
       <div class="entry">
         <div class="entry-head">
-          <span class="entry-role">Vice-President <span class="entry-org">&middot; SP Infocomm Club</span></span>
-          <span class="entry-date">Feb 2025 &ndash; Present</span>
+          <span class="entry-role">Co-Founder <span class="entry-org">&middot; SourceFoods</span></span>
+          <span class="entry-date">Oct 2024 &ndash; Present</span>
         </div>
-        <div class="entry-loc">Previously Events Lead, ExCo (AY24/25)</div>
         <ul class="bullets">
-          <li>Help plan workshops across a range of tech skills for students from all backgrounds.</li>
-          <li>Help run inclusive tech events and service-learning initiatives.</li>
+          <li>Co-founded a food-aid initiative that helps partner organisations track donated food and redistribute surplus before it is wasted.</li>
+          <li>Led development of a shared system for donations, inventory, and distribution, replacing paper logs and disconnected spreadsheets.</li>
         </ul>
       </div>
 
       <div class="entry">
         <div class="entry-head">
-          <span class="entry-role">Leadership Development Coordinator <span class="entry-org">&middot; SP Outstanding Talent</span></span>
-          <span class="entry-date">Mar 2026 &ndash; Present</span>
+          <span class="entry-role">Acting Deputy Head of Programmes <span class="entry-org">&middot; YouthTechSG</span></span>
+          <span class="entry-date">Oct 2024 &ndash; Present</span>
         </div>
         <ul class="bullets">
-          <li>Help maintain leadership pipelines connecting SP students to opportunities within SP and with community and inter-institution partners.</li>
-        </ul>
-      </div>
-
-      <div class="entry">
-        <div class="entry-head">
-          <span class="entry-role">Member <span class="entry-org">&middot; SP RoboCup Interest Group</span></span>
-          <span class="entry-date">Aug 2025 &ndash; Present</span>
-        </div>
-        <ul class="bullets">
-          <li>Competed at RoboRoarZ 2025 (Jakarta) and RoboRoarZ 2026 (Singapore) with the team.</li>
-          <li>Helped improve the vision system for SP's Robo-Erectus RoboCup SML team by automating part of the computer-vision pre-training workflow.</li>
-          <li>Worked with ROS 2 for system integration, package management, and simulation-to-hardware deployment.</li>
-        </ul>
-      </div>
-
-      <div class="entry">
-        <div class="entry-head">
-          <span class="entry-role">Amateur Radio &amp; Electronics <span class="entry-org">&middot; Hobbyist</span></span>
-        </div>
-        <ul class="bullets">
-          <li>Designing PCBs in KiCad for hobby projects, and building RF antennas for terrestrial amateur radio and satellite (AMSAT) communications.</li>
-          <li>Writing small SDR-based DSP scripts for signal analysis and decoding.</li>
+          <li>Help run student technology events, a cybersecurity scholarship, and open-source fellowships with external partners.</li>
+          <li>Supported more than 20 scholarship students and helped place more than 50 fellows on live open-source projects.</li>
         </ul>
       </div>
     </section>
@@ -189,7 +140,7 @@
         <div class="edu-top">
           <div>
             <div class="edu-name">Singapore Polytechnic</div>
-            <div class="edu-program">Diploma in Computer Engineering &middot; Jul 2025 &ndash; Jan 2028</div>
+            <div class="edu-program">Diploma in Computer Engineering &middot; Apr 2025 &ndash; Present</div>
           </div>
           <div class="edu-gpa">GPA 4.00 / 4.00</div>
         </div>
@@ -197,7 +148,6 @@
           <span class="honor">Director's Honour Roll, AY25/26</span>
           <span class="honor">SP Engineering Scholar</span>
           <span class="honor">Siemens Prize</span>
-          <span class="honor">CCA: Gold with Honours</span>
         </div>
       </div>
 
@@ -205,7 +155,7 @@
         <div class="edu-top">
           <div>
             <div class="edu-name">Singapore Polytechnic</div>
-            <div class="edu-program">Polytechnic Foundation Programme, Science &amp; Technology &middot; Apr 2024 &ndash; Mar 2025</div>
+            <div class="edu-program">Polytechnic Foundation Programme, Science &amp; Technology &middot; Apr 2024 &ndash; Feb 2025</div>
           </div>
           <div class="edu-gpa">GPA 4.00 / 4.00</div>
         </div>
@@ -214,7 +164,6 @@
           <span class="honor">Top PFP Student Award</span>
           <span class="honor">Distinctions, 8/9 modules</span>
         </div>
-        <p class="edu-note">Represented SP at the Singapore Undergraduate Policy Competition, Singapore Debate Open &amp; SMU Novices, and Singapore Model Cabinet 2024.</p>
       </div>
     </section>
 
@@ -223,49 +172,48 @@
       <h2>Skills</h2>
       <div class="skill-grid">
         <div>
-          <div class="skill-cat-label">Robotics</div>
+          <div class="skill-cat-label">AI &amp; Machine Learning</div>
           <div class="skill-tags">
-            <span class="skill-tag">ROS 2</span>
-            <span class="skill-tag">C++</span>
+            <span class="skill-tag">Python</span>
             <span class="skill-tag">Computer Vision</span>
+            <span class="skill-tag">YOLO26</span>
+            <span class="skill-tag">scikit-learn</span>
+            <span class="skill-tag">XGBoost</span>
+            <span class="skill-tag">LightGBM</span>
+            <span class="skill-tag">Model Quantisation</span>
+            <span class="skill-tag">Isotonic Calibration</span>
+          </div>
+        </div>
+        <div>
+          <div class="skill-cat-label">Embedded &amp; Robotics</div>
+          <div class="skill-tags">
+            <span class="skill-tag">STM32</span>
+            <span class="skill-tag">RTOS</span>
+            <span class="skill-tag">Raspberry Pi CM5</span>
+            <span class="skill-tag">Hailo</span>
+            <span class="skill-tag">ROS 2 / Nav2</span>
+            <span class="skill-tag">LiDAR &amp; Sensor Fusion</span>
             <span class="skill-tag">3D Modelling</span>
-            <span class="skill-tag">3D Printing</span>
+          </div>
+        </div>
+        <div>
+          <div class="skill-cat-label">Software Development</div>
+          <div class="skill-tags">
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">JavaScript / TypeScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">LangChain</span>
+            <span class="skill-tag">Flask</span>
+            <span class="skill-tag">Git / Linux</span>
           </div>
         </div>
         <div>
           <div class="skill-cat-label">RF &amp; Hardware</div>
           <div class="skill-tags">
-            <span class="skill-tag">PCB Design</span>
-            <span class="skill-tag">SDR Software</span>
-            <span class="skill-tag">DSP</span>
-            <span class="skill-tag">Terrestrial &amp; Satellite (AMSAT)</span>
-          </div>
-        </div>
-        <div>
-          <div class="skill-cat-label">Software &amp; AI</div>
-          <div class="skill-tags">
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">JavaScript / TypeScript</span>
-            <span class="skill-tag">React</span>
-            <span class="skill-tag">LangGraph</span>
-            <span class="skill-tag">LangChain</span>
-            <span class="skill-tag">PyTorch</span>
-          </div>
-        </div>
-        <div>
-          <div class="skill-cat-label">Tools</div>
-          <div class="skill-tags">
-            <span class="skill-tag">Excel</span>
-            <span class="skill-tag">VBA</span>
-          </div>
-        </div>
-        <div style="grid-column: 1 / -1;">
-          <div class="skill-cat-label">Leadership &amp; Programmes</div>
-          <div class="skill-tags">
-            <span class="skill-tag">Debate &amp; adjudication</span>
-            <span class="skill-tag">Program management</span>
-            <span class="skill-tag">Grant writing</span>
-            <span class="skill-tag">Partnerships</span>
+            <span class="skill-tag">SDR / SDR++</span>
+            <span class="skill-tag">RF Experimentation</span>
+            <span class="skill-tag">Telemetry / IoT</span>
+            <span class="skill-tag">KiCad</span>
           </div>
         </div>
       </div>
@@ -306,8 +254,12 @@
           <a href="mailto:amon.kaneko@gmail.com">amon.kaneko@gmail.com</a>
         </div>
         <div class="contact-item">
-          <span class="label">SourceFoods</span>
-          <a href="mailto:amon@sourcefoods.org">amon@sourcefoods.org</a>
+          <span class="label">GitHub</span>
+          <a href="https://github.com/energelpen" target="_blank" rel="noopener">github.com/energelpen</a>
+        </div>
+        <div class="contact-item">
+          <span class="label">LinkedIn</span>
+          <a href="https://www.linkedin.com/in/amon-sk/" target="_blank" rel="noopener">linkedin.com/in/amon-sk</a>
         </div>
         <div class="contact-item">
           <span class="label">Phone</span>

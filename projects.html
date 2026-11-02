@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Projects &middot; Amon S. Kaneko</title>
-<meta name="description" content="Selected projects by Amon S. Kaneko, spanning robotics, computer vision, and machine learning.">
+<title>Projects &middot; Amon Saka Kaneko</title>
+<meta name="description" content="Amon Saka Kaneko's projects in edge AI, computer vision, autonomous robotics, machine learning, and embedded systems.">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='16' fill='%230b1210'/%3E%3Ctext x='50' y='68' font-family='monospace' font-size='50' font-weight='700' fill='%23e0993f' text-anchor='middle'%3EAK%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="css/style.css">
 </head>
@@ -28,19 +28,66 @@
   <main class="wrap glass">
     <header class="projects-intro reveal" style="--d:0">
       <p class="eyebrow">Projects</p>
-      <h1 style="font-size: clamp(26px, 4vw, 34px);">A Few Things I've Built</h1>
-      <p class="role" style="font-size:16px;">Mostly at the intersection of robotics and machine learning. More on <a href="https://github.com/energelpen" target="_blank" rel="noopener" style="color:var(--signal); text-decoration:none; border-bottom:1px solid var(--line);">github.com/energelpen</a>.</p>
+      <h1 style="font-size: clamp(26px, 4vw, 34px);">Selected Projects</h1>
+      <p class="role" style="font-size:16px;">Applied AI, computer vision, robotics, and edge deployment. More code on <a href="https://github.com/energelpen" target="_blank" rel="noopener" style="color:var(--signal); text-decoration:none; border-bottom:1px solid var(--line);">GitHub</a>.</p>
     </header>
 
     <div class="project-list">
 
       <article class="project-card reveal" style="--d:0">
         <div class="project-head">
-          <h3 class="project-title">Autonomous Mobile Robots (AMRs) Navigation in Transparent Environments for Hospital Applications</h3>
+          <h3 class="project-title">Edge AI Camera Payload for Space Situational Awareness</h3>
+          <span class="project-status progress">Research</span>
+        </div>
+        <div class="project-context">Student Research Assistant &middot; Singapore Polytechnic 5G &amp; AIoT Centre &middot; Sep 2026 &ndash; Present</div>
+        <p class="project-desc">I'm developing embedded software for a low-cost commercial off-the-shelf camera payload using a Raspberry Pi Compute Module 5 and Hailo accelerator. The work includes cleaning image data, training and comparing YOLO26-based detection models with other candidates, quantising models for edge inference, and evaluating performance within device constraints. I'm also programming redundant multi-boot and network-boot recovery paths and exploring AI models for hyperspectral analysis.</p>
+        <div class="tag-row">
+          <span class="skill-tag">Computer Vision</span>
+          <span class="skill-tag">YOLO26</span>
+          <span class="skill-tag">Model Quantisation</span>
+          <span class="skill-tag">Raspberry Pi CM5</span>
+          <span class="skill-tag">Hailo</span>
+        </div>
+      </article>
+
+      <article class="project-card reveal" style="--d:1">
+        <div class="project-head">
+          <h3 class="project-title">BusTech Autonomous Vehicle Passenger Assistance System</h3>
+          <span class="project-status progress">Grand Finals</span>
+        </div>
+        <div class="project-context">BusTech &middot; Feb 2026 &ndash; Present</div>
+        <p class="project-desc">Our team co-developed a digital twin of an autonomous bus and a passenger assistance system using existing onboard cameras. We combined computer vision and sensing logic with edge computing, telemetry, and IoT device inputs to support passengers with different assistance needs. We also implemented, integrated, and tested open language models within the assistance workflow. The project advanced to the BusTech grand finals.</p>
+        <div class="tag-row">
+          <span class="skill-tag">Digital Twin</span>
+          <span class="skill-tag">Computer Vision</span>
+          <span class="skill-tag">Edge Computing</span>
+          <span class="skill-tag">Language Models</span>
+          <span class="skill-tag">Telemetry / IoT</span>
+        </div>
+      </article>
+
+      <article class="project-card reveal" style="--d:0">
+        <div class="project-head">
+          <h3 class="project-title">RoboErectus and RoboCup Interest Group</h3>
+          <span class="project-status progress">RoboCup 2027</span>
+        </div>
+        <div class="project-context">Computer vision and robotics &middot; Preparing for RoboCup 2027</div>
+        <p class="project-desc">I automated image labelling for the RoboCup computer vision training workflow; a trained model was deployed on the RoboErectus robot at RoboCup Korea. I also designed and built a small 6-DOF robotic arm from scratch, including its 3D model and a software package. As part of the RoboCup Interest Group team, I won third place at RoboRoarZ Indonesia.</p>
+        <div class="tag-row">
+          <span class="skill-tag">Computer Vision</span>
+          <span class="skill-tag">Automated Labelling</span>
+          <span class="skill-tag">Robotics</span>
+          <span class="skill-tag">3D Modelling</span>
+        </div>
+      </article>
+
+      <article class="project-card reveal" style="--d:0">
+        <div class="project-head">
+          <h3 class="project-title">Transparent-Obstacle Detection for Autonomous Robots</h3>
           <span class="project-status progress">Ongoing</span>
         </div>
-        <div class="project-context">SP Advanced Robotics &amp; Intelligent Control Centre &middot; deployed on a Volta robot base</div>
-        <p class="project-desc">As part of my work at SP's Advanced Robotics &amp; Intelligent Control Centre, I've been looking at how to get autonomous robots to detect glass and other transparent obstacles that standard LiDAR tends to miss. I implemented <a href="https://arxiv.org/html/2408.05608v1" target="_blank" rel="noopener" style="color:var(--signal); text-decoration:none; border-bottom:1px solid var(--line);">TOPGN</a>, a method that detects glass from the intensity pattern in a LiDAR point cloud, and I'm extending it by adding ultrasonic sensing to cover cases the LiDAR intensity alone misses. It runs as a ROS 2 Nav2 costmap layer on a Volta robot base.</p>
+        <div class="project-context">Advanced Robotics and Automation Centre (ARAC) &middot; ROS 2 Nav2 &middot; Volta robot base</div>
+        <p class="project-desc">At ARAC, I benchmarked 2D and 3D LiDAR, RGB-D, infrared, and ultrasonic sensing against glass and other transparent obstacles. I reimplemented <a href="https://arxiv.org/html/2408.05608v1" target="_blank" rel="noopener" style="color:var(--signal); text-decoration:none; border-bottom:1px solid var(--line);">TOPGN</a>: projecting 3D LiDAR intensity into layered 2D grids, identifying transparent-obstacle neighbourhoods, extrapolating boundaries, and accumulating detections across robot poses. I extended the result with ultrasonic ranging and an Extended Kalman Filter, then integrated it into a ROS 2 Nav2 costmap layer. In a mock healthcare ward, the robot completed 10 of 10 collision-free autonomous runs under varied lighting.</p>
         <div class="tag-row">
           <span class="skill-tag">ROS 2</span>
           <span class="skill-tag">LiDAR</span>
@@ -134,7 +181,7 @@
           <span class="project-status live">Live Demo</span>
         </div>
         <div class="project-context">ET0737 &middot; Machine Learning &amp; AI module, Singapore Polytechnic</div>
-        <p class="project-desc">For my ML/AI module, I built a short questionnaire that estimates diabetes risk and serves the result through a web app (ClearCheck). I compared nine model families under 5-fold cross-validation on a public CDC health-survey dataset, then deployed an XGBoost model with isotonic probability calibration, since the raw model's predicted probabilities were noticeably overconfident.</p>
+        <p class="project-desc">I cleaned 441,456 raw responses from the CDC BRFSS 2015 survey into a 240,184-record modelling dataset, with leakage-safe preprocessing and stratified train, validation, and test splits. I compared nine models across eight families using cross-validation, ROC-AUC, and precision at matched recall; selected XGBoost at a recall-first operating point; and applied isotonic probability calibration. I audited recall across demographic groups and deployed the calibrated model as a Flask risk questionnaire on Render.</p>
         <div class="tag-row">
           <span class="skill-tag">Python</span>
           <span class="skill-tag">XGBoost</span>
@@ -157,13 +204,27 @@
             <figcaption>The deployed ClearCheck questionnaire</figcaption>
           </figure>
           <figure class="shot">
-            <div class="media"><img src="images/diabetes-predictor/model-comparison.png" alt="Comparison of nine model families across ROC-AUC, F1, recall, and precision under 5-fold cross-validation" loading="lazy"></div>
-            <figcaption>Comparing 9 model families under 5-fold CV</figcaption>
+            <div class="media"><img src="images/diabetes-predictor/model-comparison.png" alt="Comparison of nine models across ROC-AUC, F1, recall, and precision under 5-fold cross-validation" loading="lazy"></div>
+            <figcaption>Comparing 9 models across 8 families</figcaption>
           </figure>
           <figure class="shot">
             <div class="media"><img src="images/diabetes-predictor/calibration.png" alt="Probability calibration of the deployed model, before and after isotonic calibration" loading="lazy"></div>
             <figcaption>Isotonic calibration vs. raw XGBoost</figcaption>
           </figure>
+        </div>
+      </article>
+
+      <article class="project-card reveal" style="--d:0">
+        <div class="project-head">
+          <h3 class="project-title">Fake News Detection Agent</h3>
+          <span class="project-status live">Project</span>
+        </div>
+        <div class="project-context">LangChain &middot; Jan 2025</div>
+        <p class="project-desc">I built a LangChain-orchestrated agent that analyses news content and produces a fake-news assessment through a structured, multi-step workflow.</p>
+        <div class="tag-row">
+          <span class="skill-tag">LangChain</span>
+          <span class="skill-tag">AI Agents</span>
+          <span class="skill-tag">Python</span>
         </div>
       </article>
 
